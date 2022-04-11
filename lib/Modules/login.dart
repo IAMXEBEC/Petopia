@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:petopia/Modules/forgot_password.dart';
 import 'package:petopia/Modules/singup.dart';
+import 'package:petopia/navpages/main_page.dart';
 
 class login extends StatelessWidget {
   @override
@@ -103,7 +104,7 @@ class login extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) {
-                          return Text("data");
+                          return MainPage();
                         }));
                       },
                       padding: EdgeInsets.all(0),
