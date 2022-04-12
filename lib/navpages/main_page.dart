@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:petopia/navpages/home_page.dart';
 import 'package:petopia/navpages/liked.dart';
 import 'package:petopia/navpages/messages.dart';
@@ -43,12 +44,14 @@ class _MainPageState extends State<MainPage> {
           showUnselectedLabels: false,
           elevation: 0,
           items: [
-            BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
             BottomNavigationBarItem(
-                label: "Messages", icon: Icon(Icons.messenger)),
-            BottomNavigationBarItem(label: "Liked", icon: Icon(Icons.favorite)),
+                label: "Home", icon: FaIcon(FontAwesomeIcons.houseChimney)),
             BottomNavigationBarItem(
-                label: "Settings", icon: Icon(Icons.settings)),
+                label: "Messages", icon: FaIcon(FontAwesomeIcons.comment)),
+            BottomNavigationBarItem(
+                label: "Liked", icon: FaIcon(FontAwesomeIcons.solidHeart)),
+            BottomNavigationBarItem(
+                label: "Settings", icon: FaIcon(FontAwesomeIcons.gear)),
           ]),
     );
   }
